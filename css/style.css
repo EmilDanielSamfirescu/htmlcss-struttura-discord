@@ -109,9 +109,43 @@ a:link, a:visited {
 MAIN 
 */
 
+
+.row {
+    width: 100%;
+    height: 500px;
+}
+
+.big-row {
+    width: 100%;
+    height: 800px;
+}
+
+.col {
+    border: 1px dashed black;
+    height: 80%;
+    width: 100%;
+}
+
+.col-blue {
+    width: 60%;
+    background-color: #1C90FF;
+}
+
+.col-pink {
+    width: 40%;
+    background-color: #FEC0CA;
+}
+
+.col-green {
+    background-color: #228B21;
+    height: 90%;
+}
+
 /* 
 FOOTER 
 */
+
+
 
 /* 
 DEBUG 
@@ -120,4 +154,8 @@ DEBUG
 .debug, .container {
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.14);
+}
+
+.debug, .row {
+    border: 1px solid black;
 }
