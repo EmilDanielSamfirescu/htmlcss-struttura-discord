@@ -32,7 +32,7 @@ GENERAL
 */
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -144,10 +144,11 @@ MAIN
 /* 
 FOOTER 
 */
-
-.upper-footer {
+footer {
     background-color: #23272A;
-    border-bottom: 1px solid darkgrey;
+}
+.upper-footer {
+    
     width: 100%;
     height: 500px;
     display: flex;
@@ -165,7 +166,6 @@ FOOTER
 }
 
 .lower-footer {
-    background-color: #23272A;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -196,6 +196,11 @@ FOOTER
     background-color: #FFB6C1;
     border:  1px dashed black;
     padding: 5px;
+}
+
+hr {
+    color: darkgrey;
+    margin-bottom: 20px;
 }
 
 /* 
