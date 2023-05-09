@@ -97,6 +97,14 @@ a:link, a:visited {
     text-decoration: none;
 } 
 
+.big-pink-square {
+    color: pink;
+    background-color: #EE81EE;
+    margin: 50px  auto;
+    height: 300px;
+    width: 60%;
+}
+
 /* 
 MAIN 
 */
