@@ -1,26 +1,6 @@
 /* 
-TIPHOGRAPHY SYSTEM
--COLORS
-#ADD8E6
-#DAA520
-#00008B
-#EE81EE
-#1C90FF
-#FEC0CA
-#228B21
-#D3D3D3
-#EF8080
-#20B1A9
-#23272A
-#7FFFD3
-#FFB6C1
-
-*/
-
-/* 
 RESET 
 */
-
 * {
     margin: 0;
     padding: 0;
@@ -30,66 +10,48 @@ RESET
 /* 
 GENERAL 
 */
-
 .container {
-    max-width: 1000px;
+    max-width:600px;
     height: 100%;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+
 
 /* 
 HEADER 
 */
 
-header {
-    background-color: #00008B;
-    width: 100%;
-    height: 500px;
+header.main-header{
+background-color: bisque;
+height: 500px;
 }
 
-.header-top {
-    background-color: #ADD8E6;
-    height: 20%;
+.upper-header {
+    background-color: aqua;
+    height: 100px;
 }
+
 
 nav {
-    background-color: #DAA520;
-    height: 40px;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    height: 40px;
+    margin-top: 25px;
+    background-color: coral;
 }
 
-nav > * {
-    width: calc(100% / 3);
+.col-header {
+    border: 1px dashed black;
+    width: calc(100% / 3); 
+    line-height: 40px; 
 }
 
-.nav-colum-01 {
-    text-align: start;
-    line-height: 40px;
-    height: 100%;
+.--logo {
     padding-left: 10px;
-    border: 1px dashed black;
 }
 
-.nav-colum-02 {
+.--link {
     text-align: center;
-    line-height: 40px;
-    height: 100%;
-    border: 1px dashed black;
-}
-
-.nav-colum-03 {
-    text-align: end;
-    padding-right: 10px;
-    line-height: 40px;
-    height: 100%;
-    border: 1px dashed black;
 }
 
 a:link, a:visited {
@@ -97,110 +59,127 @@ a:link, a:visited {
     text-decoration: none;
 } 
 
-.big-pink-square {
-    color: pink;
-    background-color: #EE81EE;
-    margin: 50px  auto;
+.--login {
+    text-align: end;
+    padding-right: 10px;
+}
+
+.big-pink {
+    width: 500px;
     height: 300px;
-    width: 60%;
+    background-color: pink;
+    margin: auto;
+    margin-top: 50px;
 }
 
 /* 
 MAIN 
 */
 
+main {
+    height: 100%;
+}
 
-.row {
+main > section {
+    height: 400px;
+}
+
+main > section:nth-child(even) {
+    background-color: lightgrey;
+}
+
+article {
+    height: 100%;
     width: 100%;
-    height: 500px;
+    display: flex;
+    align-items: center;
 }
 
-.big-row {
-    width: 100%;
-    height: 800px;
+.square {
+height: 80%;
+width: 100%;
 }
 
-.col {
-    border: 1px dashed black;
-    height: 80%;
-    width: 100%;
+.square--blue {
+background-color: aquamarine;
+width: 60%;
 }
 
-.col-blue {
-    width: 60%;
-    background-color: #1C90FF;
+.square--pink {
+background-color:deeppink;
+width: calc(100% - 60%);
 }
 
-.col-pink {
-    width: 40%;
-    background-color: #FEC0CA;
+.special-section {
+    height: 600px;
 }
 
-.col-green {
-    background-color: #228B21;
+.special-square{
+    background-color:lightgreen;
     height: 90%;
+    width: 100%;
 }
 
 /* 
 FOOTER 
 */
+
 footer {
     background-color: #23272A;
-}
-.upper-footer {
-    
-    width: 100%;
     height: 500px;
+}
+
+.upper-footer {
+    height: 400px;
+}
+
+.only-margin {
     display: flex;
-    color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
-.upper-footer > * {
+
+.big-green {
+    height: 90%;
+    width: 100%;
+    background-color: darkgreen;
+    display: flex;
+}
+
+.col {
     width: calc(100% / 3);
-    height: 95%;
-    padding-top: 10px;
-    border: 2px dashed black;
 }
 
-.col-footer {
-    display: flex;;
+.green-col {
+    display: flex;
 }
 
-.lower-footer {
-    color: white;
+.pink-col {
+    background-color: hotpink;
+}
+
+.small-col {
+width: 100%;
+}
+
+.box-footer {
+    background-color: rgb(64, 178, 72);
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100px;
 }
 
-.ultimate-col {
-    width: calc(100% / 2);
-    border: 1px dashed white;
-}
-
-.--pinky {
-    background-color: #EF8080;
-    width: 100%;
-}
-
-.--green {
-    background-color: #20B1A9;
-}
-
-.lower-footer {
-    background-color: #7FFFD3;
-}
-
-.footer-buttons {
-    background-color: #FFB6C1;
-    border:  1px dashed black;
-    padding: 5px;
+.last-botton {
+    background-color: yellow;
+    height: 20px;
+    border: 2px dashed palevioletred;
 }
 
 hr {
-    color: darkgrey;
-    margin-bottom: 20px;
+    color: aliceblue;
+    margin-bottom: 16px;
 }
 
 /* 
@@ -208,10 +187,19 @@ DEBUG
 */
 
 .debug, .container {
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.14);
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.debug, .row {
-    border: 1px solid black;
+.debug, .square, .special-square {
+    border: 1px dashed black;
 }
+
+.debug, .col {
+    border: 1px dashed white;
+}
+
+.debug, .small-col {
+    border: 1px dashed yellow;
+}
+
+.debug
